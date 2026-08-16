@@ -1,0 +1,739 @@
+/* ============================================================
+   AI RETENTION INTELLIGENCE
+   GLOBAL APPLICATION STYLES
+   ============================================================ */
+
+
+/* ============================================================
+   GLOBAL THEME
+   ============================================================ */
+
+:root {
+    --page-bg: #EEF3F8;
+    --card-bg: #FFFFFF;
+
+    --primary-blue: #0B5ED7;
+    --primary-blue-dark: #084298;
+    --deep-navy: #12355B;
+
+    --text-primary: #172B3A;
+    --text-secondary: #405466;
+    --text-muted: #566575;
+
+    --border-light: #D8E2EC;
+    --border-medium: #C7D7E8;
+
+    --success: #198754;
+    --warning: #F0AD4E;
+    --danger: #DC3545;
+    --critical: #8B0000;
+
+    --shadow-soft:
+        0 2px 8px rgba(31, 55, 80, 0.07);
+
+    --shadow-medium:
+        0 5px 15px rgba(31, 55, 80, 0.16);
+}
+
+
+/* ============================================================
+   MAIN APPLICATION
+   ============================================================ */
+
+.stApp {
+    background-color: var(--page-bg);
+    color: var(--text-primary);
+}
+
+.main {
+    padding-top: 1.5rem;
+}
+
+.block-container {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+
+/* ============================================================
+   GLOBAL TEXT
+   ============================================================ */
+
+body,
+.stApp,
+.stMarkdown,
+p,
+span,
+label {
+    color: var(--text-primary);
+}
+
+strong,
+b {
+    color: var(--text-primary);
+    font-weight: 700;
+}
+
+
+/* ============================================================
+   HEADINGS
+   ============================================================ */
+
+h1 {
+    color: var(--deep-navy) !important;
+    font-weight: 750 !important;
+    letter-spacing: -0.3px;
+}
+
+h2 {
+    color: var(--deep-navy) !important;
+    font-weight: 700 !important;
+}
+
+h3 {
+    color: var(--deep-navy) !important;
+    font-weight: 700 !important;
+}
+
+h4,
+h5,
+h6 {
+    color: var(--deep-navy) !important;
+    font-weight: 700 !important;
+}
+
+[data-testid="stMarkdownContainer"] h1,
+[data-testid="stMarkdownContainer"] h2,
+[data-testid="stMarkdownContainer"] h3,
+[data-testid="stMarkdownContainer"] h4 {
+    color: var(--deep-navy) !important;
+    font-weight: 700 !important;
+}
+
+
+/* ============================================================
+   SIDEBAR
+   ============================================================ */
+
+[data-testid="stSidebar"] {
+    background-color: var(--card-bg);
+    padding-top: 1rem;
+    border-right: 1px solid var(--border-light);
+}
+
+[data-testid="stSidebar"] p,
+[data-testid="stSidebar"] span,
+[data-testid="stSidebar"] label {
+    color: var(--text-primary) !important;
+    font-weight: 500;
+}
+
+[data-testid="stSidebar"] h1,
+[data-testid="stSidebar"] h2,
+[data-testid="stSidebar"] h3,
+[data-testid="stSidebar"] h4 {
+    color: var(--deep-navy) !important;
+    font-weight: 700 !important;
+}
+
+[data-testid="stSidebar"] hr {
+    margin-top: 0.75rem;
+    margin-bottom: 1rem;
+    border-color: var(--border-light);
+}
+
+
+/* ============================================================
+   SIDEBAR NAVIGATION
+   ============================================================ */
+
+[data-testid="stSidebarNav"] a {
+    color: var(--text-primary) !important;
+    font-weight: 600 !important;
+}
+
+[data-testid="stSidebarNav"] a:hover {
+    color: var(--primary-blue) !important;
+}
+
+
+/* ============================================================
+   METRIC CARDS
+   ============================================================ */
+
+[data-testid="stMetric"] {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-light);
+    border-radius: 10px;
+    padding: 0.85rem;
+    box-shadow: var(--shadow-soft);
+}
+
+[data-testid="stMetricLabel"] {
+    color: var(--text-secondary) !important;
+    font-weight: 600 !important;
+}
+
+[data-testid="stMetricValue"] {
+    color: var(--deep-navy) !important;
+    font-weight: 750 !important;
+}
+
+[data-testid="stMetricDelta"] {
+    font-weight: 650 !important;
+}
+
+
+/* ============================================================
+   BUTTONS
+   ============================================================ */
+
+.stButton > button {
+    border-radius: 8px;
+    font-weight: 700;
+    color: var(--deep-navy) !important;
+    border: 1px solid var(--border-medium);
+}
+
+.stButton > button[kind="primary"] {
+    background-color: var(--primary-blue) !important;
+    color: #FFFFFF !important;
+    border: 1px solid var(--primary-blue-dark) !important;
+    font-weight: 700 !important;
+}
+
+.stButton > button[kind="primary"]:hover {
+    background-color: var(--primary-blue-dark) !important;
+    color: #FFFFFF !important;
+}
+
+
+/* ============================================================
+   DOWNLOAD BUTTONS
+   ============================================================ */
+
+[data-testid="stDownloadButton"] > button {
+    background-color: var(--primary-blue) !important;
+    color: #FFFFFF !important;
+    border: 1px solid var(--primary-blue-dark) !important;
+    border-radius: 8px !important;
+    font-weight: 700 !important;
+}
+
+[data-testid="stDownloadButton"] > button:hover {
+    background-color: var(--primary-blue-dark) !important;
+    color: #FFFFFF !important;
+}
+
+
+/* ============================================================
+   ALERTS
+   ============================================================ */
+
+[data-testid="stAlert"] {
+    border-radius: 9px;
+    font-weight: 500;
+}
+
+[data-testid="stAlert"] p,
+[data-testid="stAlert"] span {
+    font-weight: 550;
+}
+
+
+/* ============================================================
+   EXPANDERS
+   ============================================================ */
+
+[data-testid="stExpander"] {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-light);
+    border-radius: 9px;
+}
+
+[data-testid="stExpander"] summary {
+    color: var(--deep-navy) !important;
+    font-weight: 700 !important;
+}
+
+[data-testid="stExpander"] p,
+[data-testid="stExpander"] span {
+    color: var(--text-primary) !important;
+}
+
+
+/* ============================================================
+   INPUTS
+   ============================================================ */
+
+label {
+    color: var(--text-primary) !important;
+    font-weight: 600 !important;
+}
+
+[data-testid="stTextInput"] input {
+    color: var(--text-primary) !important;
+    background-color: var(--card-bg) !important;
+    border-color: var(--border-medium) !important;
+}
+
+[data-baseweb="select"] {
+    background-color: var(--card-bg);
+}
+
+[data-baseweb="select"] * {
+    color: var(--text-primary) !important;
+}
+
+[data-testid="stRadio"] label {
+    color: var(--text-primary) !important;
+    font-weight: 600 !important;
+}
+
+
+/* ============================================================
+   FILE UPLOADER
+   ============================================================ */
+
+[data-testid="stFileUploader"] {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-light);
+    border-radius: 10px;
+    padding: 0.5rem;
+}
+
+[data-testid="stFileUploader"] p,
+[data-testid="stFileUploader"] span {
+    color: var(--text-primary) !important;
+    font-weight: 550 !important;
+}
+
+
+/* ============================================================
+   DATAFRAMES
+   ============================================================ */
+
+[data-testid="stDataFrame"] {
+    border-radius: 8px;
+    border: 1px solid var(--border-light);
+    overflow: hidden;
+}
+
+[data-testid="stDataFrame"] * {
+    font-weight: 500;
+}
+
+
+/* ============================================================
+   LINKS
+   ============================================================ */
+
+a {
+    color: var(--primary-blue) !important;
+    font-weight: 600;
+}
+
+a:hover {
+    color: var(--primary-blue-dark) !important;
+}
+
+
+/* ============================================================
+   CAPTIONS
+   ============================================================ */
+
+[data-testid="stCaptionContainer"] {
+    color: var(--text-muted) !important;
+    font-weight: 500 !important;
+}
+
+
+/* ============================================================
+   DIVIDERS
+   ============================================================ */
+
+hr {
+    border-color: var(--border-light) !important;
+}
+
+
+/* ============================================================
+   GENERAL CARDS
+   ============================================================ */
+
+.card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-light);
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: var(--shadow-soft);
+}
+
+.card h1,
+.card h2,
+.card h3,
+.card h4 {
+    color: var(--deep-navy) !important;
+}
+
+.card p {
+    color: var(--text-primary) !important;
+}
+
+
+/* ============================================================
+   CHART CONTAINERS
+   ============================================================ */
+
+[data-testid="stPlotlyChart"] {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-light);
+    border-radius: 9px;
+    padding: 4px;
+    box-shadow: var(--shadow-soft);
+}
+
+
+/* ============================================================
+   KEY BUSINESS INSIGHTS
+   ============================================================ */
+
+/*
+   IMPORTANT:
+   This is the ONLY CSS definition for the dashboard
+   business insight cards.
+
+   Do not add another .dashboard-insight-card definition
+   below this section.
+*/
+
+.key-insights-grid {
+    display: grid !important;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr)) !important;
+
+    gap: 18px !important;
+
+    width: 100% !important;
+
+    margin-top: 18px !important;
+    margin-bottom: 25px !important;
+
+    align-items: stretch !important;
+
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+
+/* ============================================================
+   BASE INSIGHT CARD
+   ============================================================ */
+
+.dashboard-insight-card {
+    box-sizing: border-box !important;
+
+    display: flex !important;
+
+    flex-direction: column !important;
+
+    width: 100% !important;
+
+    min-width: 0 !important;
+
+    min-height: 320px !important;
+
+    padding: 24px !important;
+
+    border-radius: 14px !important;
+
+    overflow: visible !important;
+
+    overflow-wrap: break-word !important;
+
+    visibility: visible !important;
+
+    opacity: 1 !important;
+
+    position: relative !important;
+
+    box-shadow:
+        0 7px 20px rgba(31, 55, 80, 0.20) !important;
+
+    transition:
+        transform 0.15s ease,
+        box-shadow 0.15s ease !important;
+}
+
+
+/* ============================================================
+   CUSTOMER RISK
+   ============================================================ */
+
+.dashboard-insight-card.risk-card {
+    background:
+        #8FAFCB !important;
+
+    border:
+        1px solid #7699B8 !important;
+
+    border-left:
+        7px solid #064A9B !important;
+}
+
+
+/* ============================================================
+   REVENUE EXPOSURE
+   ============================================================ */
+
+.dashboard-insight-card.revenue-card {
+    background:
+        #B8A889 !important;
+
+    border:
+        1px solid #9F906F !important;
+
+    border-left:
+        7px solid #8E2F08 !important;
+}
+
+
+/* ============================================================
+   RETENTION STRATEGY
+   ============================================================ */
+
+.dashboard-insight-card.strategy-card {
+    background:
+        #8EAF99 !important;
+
+    border:
+        1px solid #769781 !important;
+
+    border-left:
+        7px solid #0D5C30 !important;
+}
+
+
+/* ============================================================
+   INSIGHT ICON
+   ============================================================ */
+
+.insight-icon {
+    display: flex !important;
+
+    align-items: center !important;
+    justify-content: center !important;
+
+    width: 44px !important;
+    height: 44px !important;
+
+    min-width: 44px !important;
+    min-height: 44px !important;
+
+    margin-bottom: 14px !important;
+
+    border-radius: 11px !important;
+
+    background:
+        rgba(255, 255, 255, 0.42) !important;
+
+    font-size: 23px !important;
+
+    line-height: 1 !important;
+
+    box-shadow:
+        0 2px 7px rgba(31, 55, 80, 0.12) !important;
+
+    visibility: visible !important;
+
+    opacity: 1 !important;
+}
+
+
+/* ============================================================
+   CARD HEADINGS
+   ============================================================ */
+
+.dashboard-insight-card h4 {
+    color:
+        #062D50 !important;
+
+    font-size:
+        19px !important;
+
+    font-weight:
+        800 !important;
+
+    line-height:
+        1.3 !important;
+
+    margin:
+        0 0 15px 0 !important;
+
+    padding:
+        0 !important;
+
+    visibility:
+        visible !important;
+
+    opacity:
+        1 !important;
+}
+
+
+/* ============================================================
+   CARD PARAGRAPHS
+   ============================================================ */
+
+.dashboard-insight-card p {
+    color:
+        #142A3A !important;
+
+    font-size:
+        14px !important;
+
+    font-weight:
+        600 !important;
+
+    line-height:
+        1.55 !important;
+
+    margin:
+        0 0 12px 0 !important;
+
+    padding:
+        0 !important;
+
+    visibility:
+        visible !important;
+
+    opacity:
+        1 !important;
+}
+
+
+/* ============================================================
+   IMPORTANT NUMBERS
+   ============================================================ */
+
+.dashboard-insight-card p strong {
+    color:
+        #052B4C !important;
+
+    font-size:
+        16px !important;
+
+    font-weight:
+        850 !important;
+}
+
+
+/* ============================================================
+   REVENUE VALUE
+   ============================================================ */
+
+.dashboard-insight-card .revenue-value {
+    color:
+        #4B2408 !important;
+
+    font-size:
+        22px !important;
+
+    font-weight:
+        900 !important;
+
+    line-height:
+        1.35 !important;
+
+    margin:
+        2px 0 15px 0 !important;
+}
+
+
+/* ============================================================
+   BUSINESS INSIGHT ACTION
+   ============================================================ */
+
+.dashboard-insight-card .insight-action {
+    margin-top:
+        auto !important;
+
+    padding-top:
+        14px !important;
+
+    border-top:
+        1px solid rgba(31, 55, 80, 0.22) !important;
+
+    color:
+        #163448 !important;
+
+    font-size:
+        13.5px !important;
+
+    font-weight:
+        600 !important;
+
+    line-height:
+        1.55 !important;
+}
+
+.dashboard-insight-card .insight-action strong {
+    color:
+        #052B4C !important;
+
+    font-size:
+        14px !important;
+
+    font-weight:
+        850 !important;
+}
+
+
+/* ============================================================
+   HOVER
+   ============================================================ */
+
+.dashboard-insight-card:hover {
+    transform:
+        translateY(-3px) !important;
+
+    box-shadow:
+        0 11px 27px rgba(31, 55, 80, 0.28) !important;
+}
+
+
+/* ============================================================
+   TABLET
+   ============================================================ */
+
+@media (max-width: 900px) {
+
+    .key-insights-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr)) !important;
+    }
+
+}
+
+
+/* ============================================================
+   MOBILE
+   ============================================================ */
+
+@media (max-width: 640px) {
+
+    .key-insights-grid {
+        grid-template-columns:
+            1fr !important;
+    }
+
+    .dashboard-insight-card {
+        min-height:
+            auto !important;
+
+        padding:
+            20px !important;
+    }
+
+}

@@ -1,0 +1,6 @@
+Frequency,Monetary,average_order_value,average_review_score,preferred_payment_method
+2,500,250,4.5,credit_card
+1,200,200,5.0,boleto
+3,800,266.67,3.5,credit_card
+4,1200,300,4.0,debit_card
+1,150,150,2.5,voucher

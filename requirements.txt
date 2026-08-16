@@ -1,0 +1,39 @@
+# Core Data Processing
+pandas
+numpy
+
+# Data Visualization
+matplotlib
+seaborn
+plotly
+
+# Machine Learning
+scikit-learn
+xgboost
+imbalanced-learn
+
+# Explainable AI
+shap
+
+# Web Application
+streamlit
+
+# Database
+sqlalchemy
+pymysql
+
+# Utilities
+openpyxl
+jupyter
+notebook
+python-dotenv
+
+# Model Serialization
+joblib
+
+# Code Quality
+black
+flake8
+
+# Testing
+pytest
